@@ -1,18 +1,19 @@
-package tribunal.plugin.demo;
+package tribunal.module.demo;
 
 import tribunal.core.Verdict;
 
-public class Demo3 implements Verdict {
+public class Demo implements Verdict {
 
     public void init(){
-        System.out.println(this.getClass().getName() + " - Demo3 verdict init.");
+        System.out.println(this.getClass().getName() + " - Demo verdict init.");
     }
 
     public Object call(Object[] args){
-        System.out.println(this.getClass().getName() + " - Demo3 verdict call.");
+        System.out.println(this.getClass().getName() + " - Demo verdict call.");
         for(Object arg: args) {
             System.out.println(this.getClass().getName() + " - " + arg);
         }
         return null;
     }
+
 }

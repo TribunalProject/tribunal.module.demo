@@ -1,8 +1,8 @@
-package tribunal.plugin.demo;
+package tribunal.module.demo;
 
 import tribunal.core.VerdictManager;
 
-public class DemoPluginManager extends VerdictManager{
+public class DemoVerdictManager extends VerdictManager{
 
     @Override
     public void start() {
